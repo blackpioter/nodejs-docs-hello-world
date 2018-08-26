@@ -1,10 +1,10 @@
 var http = require('http');
-var os = require('os');
+var process = require('process');
 
 var server = http.createServer(function(request, response) {
 
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World! : " + os.platform);
+    response.end("Hello World! : " + process.platform);
 
 });
 
