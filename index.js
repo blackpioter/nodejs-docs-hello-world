@@ -4,7 +4,7 @@ var process = require('process');
 var server = http.createServer(function(request, response) {
 
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World! : " + process.platform);
+    response.end("Hello AZURE! : " + process.platform);
 
 });
 
